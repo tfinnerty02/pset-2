@@ -87,7 +87,36 @@ public class ProblemSet2 {
          * bills and coins needed to produce this amount.
          */
 
+         System.out.print("\nEnter a dollar amount: ");
+         double dollarAmount3 = in.nextDouble();
+         dollarAmount3 = dollarAmount3*100;
 
+         int twenties = (int) (dollarAmount3/2000);
+         dollarAmount3 = dollarAmount3%2000;
+
+         int tens = (int) (dollarAmount3/1000);
+         dollarAmount3 = dollarAmount3%1000;
+
+         int fives = (int) (dollarAmount3/500);
+         dollarAmount3 = dollarAmount3%500;
+
+         int dollarBills3 = (int) (dollarAmount3/100);
+         dollarAmount3 = dollarAmount3%100;
+
+         int quarters3 = (int) (dollarAmount3/25);
+         dollarAmount3 = dollarAmount3%25;
+
+         int dimes3 = (int) (dollarAmount3/10);
+         dollarAmount3 = dollarAmount3%10;
+
+         int nickels3 = (int) (dollarAmount3/5);
+         dollarAmount3 = dollarAmount3%5;
+
+         int pennies3 = (int) (dollarAmount3/1);
+         dollarAmount3 = dollarAmount3%1;
+
+         System.out.println("BILLS  : " + (twenties + tens + fives + dollarBills3));
+         System.out.println("COINS  : " + (quarters3 + dimes3 + nickels3 + pennies3));
 
         /*
          * Exercise 4.
