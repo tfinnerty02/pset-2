@@ -26,9 +26,10 @@ public class ProblemSet2 {
          *
          * Prompt the user to enter the following information (in order): first name, last
          * name, grade, age, and hometown.
-         *git add [filename]
-         *git commit -m "comment"
-         *git push origin master
+         *
+         * git add [filename]
+         * git commit -m "comment"
+         * git push origin master
          */
 
         System.out.print("\nEnter your first name: ");
@@ -179,10 +180,6 @@ public class ProblemSet2 {
         System.out.printf("\nAREA: %,.2f", area);
         System.out.printf("\nCIRCUMFERENCE: %,.2f\n", circumference);
 
-
-        // System.out.println("AREA: " + area);
-        // System.out.println("CIRCUMFERENCE: ");
-
         /*
          * Exercise 7.
          *
@@ -190,7 +187,14 @@ public class ProblemSet2 {
          * corresponding rectangle.
          */
 
+        System.out.print("\nEnter a length: ");
+        int length = in .nextInt();
+        System.out.print("Enter a width: ");
+        int width = in .nextInt();
 
+        System.out.println("\nAREA      : " + length * width);
+        System.out.println("PERIMETER : " + 2 * length + 2 * width);
+        System.out.printf("DIAGONAL  : %,.2f\n", Math.hypot(length, width));
 
         /*
          * Exercise 8.
@@ -198,7 +202,14 @@ public class ProblemSet2 {
          * Given a side length, print the area and perimeter of the corresponding hexagon.
          */
 
+        System.out.print("\nEnter a side length: ");
+        int sideLength = in .nextInt();
+        in.nextLine();
 
+        double hexArea = ((3 * Math.sqrt(3)) / 2) * Math.pow(sideLength, 2);
+
+        System.out.printf("\nAREA       : %,.2f\n", hexArea);
+        System.out.println("PERIMETER  : " + 6 * sideLength);
 
         /*
          * Exercise 9.
@@ -206,6 +217,13 @@ public class ProblemSet2 {
          * Given a string, reverse and print the first and second halves of that string.
          */
 
+        System.out.print("\nEnter a String: ");
+        String originalString = in .nextLine();
+
+        String firstHalf = originalString.substring(0, (int) Math.floor(originalString.length()) / 2);
+        String secondHalf = originalString.substring((int) Math.floor(originalString.length()) / 2, originalString.length());
+
+        System.out.println("\n" + secondHalf + firstHalf);
 
 
         /*
@@ -214,7 +232,14 @@ public class ProblemSet2 {
          * Given a first, middle, and last name, print the corresponding initials.
          */
 
+        System.out.print("\nEnter your first name: ");
+        String firstName10 = in .nextLine();
+        System.out.print("Enter your middle name: ");
+        String middleName = in .nextLine();
+        System.out.print("Enter last first name: ");
+        String lastName10 = in .nextLine();
 
+        System.out.println("\n" + firstName10.substring(0, 1) + middleName.substring(0, 1) + lastName10.substring(0, 1) + "\n");
 
         in .close();
     }
