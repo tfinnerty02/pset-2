@@ -55,30 +55,30 @@ public class ProblemSet2 {
          * bills, quarters, dimes, nickels, and pennies needed to produce this amount.
          */
 
-         System.out.print("\nEnter a dollar amount: ");
-         double dollarAmount = in.nextDouble();
-         dollarAmount = dollarAmount*100;
-
-         int bills = (int) (dollarAmount/100);
-         dollarAmount = dollarAmount%100;
-
-         int quarters = (int) (dollarAmount/25);
-         dollarAmount = dollarAmount%25;
-
-         int dimes = (int) (dollarAmount/10);
-         dollarAmount = dollarAmount%10;
-
-         int nickels = (int) (dollarAmount/5);
-         dollarAmount = dollarAmount%5;
-
-         int pennies = (int) (dollarAmount/1);
-         dollarAmount = dollarAmount%1;
-
-         System.out.println("\nDOLLARS  : " + bills);
-         System.out.println("QUARTERS : " + quarters);
-         System.out.println("DIMES    : " + dimes);
-         System.out.println("NICKELS  : " + nickels);
-         System.out.println("PENNIES  : " + pennies);
+         // System.out.print("\nEnter a dollar amount: ");
+         // double dollarAmount = in.nextDouble();
+         // dollarAmount = dollarAmount*100;
+         //
+         // int bills = (int) (dollarAmount/100);
+         // dollarAmount = dollarAmount%100;
+         //
+         // int quarters = (int) (dollarAmount/25);
+         // dollarAmount = dollarAmount%25;
+         //
+         // int dimes = (int) (dollarAmount/10);
+         // dollarAmount = dollarAmount%10;
+         //
+         // int nickels = (int) (dollarAmount/5);
+         // dollarAmount = dollarAmount%5;
+         //
+         // int pennies = (int) (dollarAmount/1);
+         // dollarAmount = dollarAmount%1;
+         //
+         // System.out.println("\nDOLLARS  : " + bills);
+         // System.out.println("QUARTERS : " + quarters);
+         // System.out.println("DIMES    : " + dimes);
+         // System.out.println("NICKELS  : " + nickels);
+         // System.out.println("PENNIES  : " + pennies);
 
         /*
          * Exercise 3.
@@ -87,36 +87,36 @@ public class ProblemSet2 {
          * bills and coins needed to produce this amount.
          */
 
-         System.out.print("\nEnter a dollar amount: ");
-         double dollarAmount3 = in.nextDouble();
-         dollarAmount3 = dollarAmount3*100;
-
-         int twenties = (int) (dollarAmount3/2000);
-         dollarAmount3 = dollarAmount3%2000;
-
-         int tens = (int) (dollarAmount3/1000);
-         dollarAmount3 = dollarAmount3%1000;
-
-         int fives = (int) (dollarAmount3/500);
-         dollarAmount3 = dollarAmount3%500;
-
-         int dollarBills3 = (int) (dollarAmount3/100);
-         dollarAmount3 = dollarAmount3%100;
-
-         int quarters3 = (int) (dollarAmount3/25);
-         dollarAmount3 = dollarAmount3%25;
-
-         int dimes3 = (int) (dollarAmount3/10);
-         dollarAmount3 = dollarAmount3%10;
-
-         int nickels3 = (int) (dollarAmount3/5);
-         dollarAmount3 = dollarAmount3%5;
-
-         int pennies3 = (int) (dollarAmount3/1);
-         dollarAmount3 = dollarAmount3%1;
-
-         System.out.println("BILLS  : " + (twenties + tens + fives + dollarBills3));
-         System.out.println("COINS  : " + (quarters3 + dimes3 + nickels3 + pennies3));
+         // System.out.print("\nEnter a dollar amount: ");
+         // double dollarAmount3 = in.nextDouble();
+         // dollarAmount3 = dollarAmount3*100;
+         //
+         // int twenties = (int) (dollarAmount3/2000);
+         // dollarAmount3 = dollarAmount3%2000;
+         //
+         // int tens = (int) (dollarAmount3/1000);
+         // dollarAmount3 = dollarAmount3%1000;
+         //
+         // int fives = (int) (dollarAmount3/500);
+         // dollarAmount3 = dollarAmount3%500;
+         //
+         // int dollarBills3 = (int) (dollarAmount3/100);
+         // dollarAmount3 = dollarAmount3%100;
+         //
+         // int quarters3 = (int) (dollarAmount3/25);
+         // dollarAmount3 = dollarAmount3%25;
+         //
+         // int dimes3 = (int) (dollarAmount3/10);
+         // dollarAmount3 = dollarAmount3%10;
+         //
+         // int nickels3 = (int) (dollarAmount3/5);
+         // dollarAmount3 = dollarAmount3%5;
+         //
+         // int pennies3 = (int) (dollarAmount3/1);
+         // dollarAmount3 = dollarAmount3%1;
+         //
+         // System.out.println("BILLS  : " + (twenties + tens + fives + dollarBills3));
+         // System.out.println("COINS  : " + (quarters3 + dimes3 + nickels3 + pennies3));
 
         /*
          * Exercise 4.
@@ -125,7 +125,22 @@ public class ProblemSet2 {
          * and inches.
          */
 
+         System.out.print("\nEnter a number of inches: ");
+         int totalInches = in.nextInt();
 
+         int miles = totalInches/63360;
+         totalInches = totalInches%63360;
+
+         int yards = totalInches/36;
+         totalInches = totalInches%36;
+
+         int feet = totalInches/12;
+         int inches = totalInches%12;
+
+         System.out.println("\nMILES  : " + miles);
+         System.out.println("YARDS  : " + yards);
+         System.out.println("FEET   : " + feet);
+         System.out.println("INCHES : " + inches);
 
         /*
          * Exercise 5.
