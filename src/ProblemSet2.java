@@ -118,8 +118,8 @@ public class ProblemSet2 {
         int pennies3 = (int)(dollarAmount3 / 1);
         dollarAmount3 = dollarAmount3 % 1;
 
-        System.out.println("BILLS  : " + (hundreds + twenties + tens + fives + dollarBills3));
-        System.out.println("COINS  : " + (quarters3 + dimes3 + nickels3 + pennies3));
+        System.out.println("\nBILLS : " + (hundreds + twenties + tens + fives + dollarBills3));
+        System.out.println("COINS : " + (quarters3 + dimes3 + nickels3 + pennies3));
 
         /*
          * Exercise 4.
@@ -161,9 +161,9 @@ public class ProblemSet2 {
         int meters = centimeters / 100;
         centimeters = centimeters % 100;
 
-        System.out.println("\nKILOMETERS   : " + kilometers);
-        System.out.println("METERS       : " + meters);
-        System.out.println("CENTIMETERS  : " + centimeters);
+        System.out.println("\nKILOMETERS  : " + kilometers);
+        System.out.println("METERS      : " + meters);
+        System.out.println("CENTIMETERS : " + centimeters);
 
         /*
          * Exercise 6.
@@ -177,8 +177,8 @@ public class ProblemSet2 {
         double area = (Math.pow(diameter / 2, 2)) * Math.PI;
         double circumference = diameter * Math.PI;
 
-        System.out.printf("\nAREA: %,.2f", area);
-        System.out.printf("\nCIRCUMFERENCE: %,.2f\n", circumference);
+        System.out.printf("\nAREA          : %,.2f", area);
+        System.out.printf("\nCIRCUMFERENCE : %,.2f\n", circumference);
 
         /*
          * Exercise 7.
@@ -191,10 +191,11 @@ public class ProblemSet2 {
         int length = in .nextInt();
         System.out.print("Enter a width: ");
         int width = in .nextInt();
+        double perimeter7 = (2*(double)length) + (2*(double)width);
 
-        System.out.println("\nAREA      : " + length * width);
-        System.out.println("PERIMETER : " + 2 * length + 2 * width);
-        System.out.printf("DIAGONAL  : %,.2f\n", Math.hypot(length, width));
+        System.out.printf("\nAREA      : %,.2f", (double)(length*width));
+        System.out.printf("\nPERIMETER : %,.2f", perimeter7);
+        System.out.printf("\nDIAGONAL  : %,.2f\n", Math.hypot(length, width));
 
         /*
          * Exercise 8.
@@ -207,9 +208,10 @@ public class ProblemSet2 {
         in.nextLine();
 
         double hexArea = ((3 * Math.sqrt(3)) / 2) * Math.pow(sideLength, 2);
+        double hexPerim = 6*sideLength;
 
-        System.out.printf("\nAREA       : %,.2f\n", hexArea);
-        System.out.println("PERIMETER  : " + 6 * sideLength);
+        System.out.printf("\nAREA      : %,.2f\n", hexArea);
+        System.out.printf("PERIMETER : %,.2f\n", hexPerim);
 
         /*
          * Exercise 9.
